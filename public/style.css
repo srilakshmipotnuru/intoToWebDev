@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Lobster&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: Ephesis;
+    color: #444;
+    font-size: large;
+}
+
+html,body{
+    margin:0;
+    padding: 0;
+}
+.nav ul{
+    margin: 0;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    display: inline-block;
+    padding: .5em;
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: #fff7;
+}
+
+.main-nav{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: lighter;
+    border-bottom: 1px solid #777;
+}
+.main-nav li{
+    padding: 0 5%;
+}
+
+.bandname{
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: Lobster;
+    font-weight: normal;
+    color: #fff;
+}
+.bandnameL{
+    font-size: 7em;
+}
+
+.header{
+    background-image: url(./assets/headerimage.avif);
+    background-size: cover;
+    background-color: rgba(0,0,0,.3);
+    background-blend-mode:multiply ;
+    padding-bottom: 5%;
+}
+
+.content{
+    margin: 1em;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-header{
+    font-family: Lobster;
+    font-weight: normal;
+    color:#333;
+    text-align: center;
+    font-size: 2.5em;
+}
+.aboutBI{
+    float:left;
+    margin: 3%;
+}
+.footermain{
+    background-color: rgb(131, 57, 131);
+    
+}
+.main_footer_cont{
+    display: flex;
+    align-items: center;
+}
+.main_footer_cont ul{
+    flex-grow: 1;
+    text-align: end;
+}
+.footer_nav li{
+    padding: .5em;
+}
+.footer_nav img{
+    width: 30px;
+    height: 30px;
+}
+.btn{
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+}
+.btn-header{
+    margin: .5em 15% 2em 15%;
+    color:white;
+    border: 2px solid ;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.btn-header:hover{
+    background-color: rgba(255,255,255,.3);
+}
+.btn-play{
+    display: block;
+    background-color: rgba(255,255,255,.1);
+    margin:0 auto;
+    color:rgb(131, 57, 131);
+    font-size: 4em;
+    border-radius: 50%;
+    padding: 0 ;
+    width: 100px;
+    height: 100px;
+}
+.tour-row{
+    border-bottom: 1px solid black;
+    padding: 1em;
+    margin:1em;
+
+}
+.tour-row:last-child{
+    border-bottom: none;
+}
+.tour-item{
+    padding-right: .5em;
+    display: inline-block;
+    font-size: 1.5em;
+
+}
+.tour-date{
+    color: #555;
+    font-weight: bold;
+    width:11%
+}
+.tour-city{
+    width: 24%; 
+}
+
+.tour-arena{
+    width:42%;
+}
+
+.tour-btn{
+    max-width:19%;
+}
+.btn-primary{
+    color: white;
+    background-color: rgb(131, 57, 131);
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    
+}
+.btn-primary:hover{
+    background-color: rgb(131, 57, 131,.7);
+}
+.shop-item{
+    margin:30px;
+
+}
+.shop-item-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+.shop-item-img{
+    height: 250px;
+
+
+}
+.shop-item-details{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price{
+    flex-grow: 1;
+    color: #333;
+}
+.shop-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cart-header{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+.cart-column{
+    border-bottom: 1px solid black;
+    margin-right:1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    display:flex;
+    align-items: center;
+}
+.cart-row{
+    display: flex;
+}
+.cart-item{
+    width: 45%;
+}
+.cart-price{
+    width:20%;
+    color:#333
+}
+.cart-quantity{
+    width:35%
+}
+.cart-item-title{
+    color: #333;
+    margin-left:0.3em;
+    font-size:1.2em;
+
+}
+.cart-item-image{
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+.btn-danger{
+    color: white;
+    background-color: rgba(255,0,0,0.7);
+}
+.btn-danger:hover{
+    background-color: rgba(255,0,0,0.9);
+}
+.cart-quantity-input{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(131, 57, 131);
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+.btn-purchase{
+    display: flex;
+    align-self: center;
+    margin: 1em;
+}
+.cart-total{
+    text-align: end;
+}

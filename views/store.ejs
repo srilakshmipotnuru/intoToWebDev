@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>One Direction | store</title>
+        <meta name="description" content="this is one direction fan page">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://checkout.stripe.com/checkout.js" defer></script>
+        <script>
+            var stripePublicKey = '<%=stripePublicKey  %>'
+            
+        </script>
+        <script src="store.js" defer></script>
+    </head>
+        <body>
+            <header class="header">
+                <nav class="nav main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="store.html">Store</a></li>
+                    </ul>
+                </nav>
+                
+                <h1 class="bandname bandnameL">One Direction</h1>
+                
+            </header>
+            <section class="content container">
+                <h2 class="section-header">Music</h2>
+                <div class="shop-items">
+                    <% items.music.forEach(function(item){ %>
+                        <div class="shop-item" data-item-id="<%= item.id %>">
+                    
+                            <span class="shop-item-title"><%= item.name %></span>
+                            
+                            <img class='shop-item-img'src="./assets/<%= item.imgName %>">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price"> $<%= item.price/100 %></span>
+                                <button class="btn btn-primary shop-item-btn" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                    <% }) %>
+                    
+                    
+                </section>
+                <section class="content container">
+                    <h2 class="section-header">Merch</h2>
+                    <div class="shop-items">
+                        <% items.merch.forEach(function(item){ %>
+                            <div class="shop-item" data-item-id="<%= item.id %>">
+                        
+                                <span class="shop-item-title"><%= item.name %></span>
+                                
+                                <img class='shop-item-img'src="./assets/<%= item.imgName %>">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-price"> $<%= item.price/100 %></span>
+                                    <button class="btn btn-primary shop-item-btn" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        <% }) %>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+            </section>
+            <section class="content container">
+                <h2 class="section-header">Cart</h2>
+                
+
+                
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">Item</span>
+                    <span class="cart-price cart-header cart-column">Price</span>
+                    <span class="cart-quantity cart-header cart-column">Quantity</span>
+                </div>
+                <div class="cart-items">
+                
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title"> Total</strong>
+                    <span class="cart-total-price">$0</span>
+                </div>
+                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+            </section>
+            <footer class="footermain">
+            
+                <div class="container main_footer_cont">
+                    <h3 class="bandname">One Direction</h3>
+                <ul class="nav footer_nav">
+                    <li><a href="https://youtube.com" target="_blank">
+                        <img src="./assets/utube.png" width="30">
+                    </a></li>
+                    <li><a href="https://facebook.com" target="_blank">
+                        <img src="./assets/fb.webp" width="30">
+                    </a></li>
+                    <li><a href="https://spotify.com" target="_blank">
+                        <img src="./assets/spotify.webp" width="30">
+                    </a></li>
+                </ul>
+                </div>
+                
+                 
+            </footer>
+        </body>
+    
+</html>
